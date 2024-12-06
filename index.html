@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site TETÊ E SANDRONA</title>
+    <style>
+        /* Estilo da página */
+        body {
+            background-color: #8A2BE2; /* Cor de fundo roxa */
+            font-family: Arial, sans-serif;
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* Estilo do texto */
+        h1 {
+            font-size: 50px;
+            margin-top: 20%;
+            animation: piscarTexto 1.5s infinite; /* Texto piscando */
+        }
+
+        /* Animação para o texto piscar */
+        @keyframes piscarTexto {
+            0% { opacity: 0; }
+            50% { opacity: 1; }
+            100% { opacity: 0; }
+        }
+
+        /* Animação para os corações subindo e descendo */
+        @keyframes subirDescer {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-150px); }
+            100% { transform: translateY(0); }
+        }
+
+        /* Corações piscando */
+        @keyframes piscando {
+            0% { opacity: 0; }
+            50% { opacity: 1; }
+            100% { opacity: 0; }
+        }
+
+        /* Estilo dos corações */
+        .coracao {
+            font-size: 50px;
+            position: absolute;
+            animation: subirDescer 3s infinite, piscando 1.5s infinite;
+            opacity: 1;
+        }
+
+        /* Posições dos corações */
+        .coracao1 { left: 10%; animation-delay: 0s; }
+        .coracao2 { left: 20%; animation-delay: 0.5s; }
+        .coracao3 { left: 30%; animation-delay: 1s; }
+        .coracao4 { left: 40%; animation-delay: 1.5s; }
+        .coracao5 { left: 50%; animation-delay: 2s; }
+        .coracao6 { left: 60%; animation-delay: 2.5s; }
+
+        /* Texto repetido "TETÊ E SANDRONA" */
+        .repetir-texto {
+            position: absolute;
+            top: 80%;
+            width: 100%;
+            font-size: 30px;
+            color: white;
+            animation: repetirTexto 5s linear infinite;
+        }
+
+        @keyframes repetirTexto {
+            0% { left: 100%; }
+            100% { left: -100%; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Texto principal -->
+    <h1>TETÊ E SANDRONA</h1>
+
+    <!-- Corações que subem e descem -->
+    <div class="coracao coracao1">❤️</div>
+    <div class="coracao coracao2">❤️</div>
+    <div class="coracao coracao3">❤️</div>
+    <div class="coracao coracao4">❤️</div>
+    <div class="coracao coracao5">❤️</div>
+    <div class="coracao coracao6">❤️</div>
+
+    <!-- Texto repetido "TETÊ E SANDRONA" -->
+    <div class="repetir-texto">TETÊ E SANDRONA - TETÊ E SANDRONA - TETÊ E SANDRONA - TETÊ E SANDRONA</div>
+
+</body>
+</html>
